@@ -1,7 +1,18 @@
-.image {
+/* .body {
+  display: flex;
+  flex-direction: column;
+} */
+
+.image, .intro {
   height: 100vh;
   width: 50vw;
+  float: left;
   position: relative;
+}
+
+form {
+  width: calc(100% - 50vw);
+  float: right;
 }
 
 .icon {
