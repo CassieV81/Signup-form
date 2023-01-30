@@ -8,24 +8,39 @@
   float: left;
   position: relative;
 }
-h3 {
+h3, p, label {
   font: 1em monospace;
   text-align: left;
   width: 80%;
+}
+
+form {
+  width: calc(100% - 40vw);
+  height: 100vh;
+  float: right;
+  margin: 0;
 }
 .intro {
   background-color: rgb(236, 240, 240);
   padding: 20px;
   margin: 0;
-  height: calc(100% / 3);
+  height: 20vh;
   width: auto;
 }
-
-form {
-  width: calc(100% - 40vw);
-  float: right;
+.main-form {
+  background-color: rgba(243, 239, 239, 0.445);
+  padding: 20px;
+  margin: 0;
+  height: 60vh;
+  width: auto;
 }
-
+.submit {
+  background-color: rgb(236, 240, 240);
+  padding: 20px;
+  margin: 0;
+  height: calc(100% - 73vh);
+  width: auto;
+}
 .icon {
   background-color: rgba(0,0,0,0.7);
   position: absolute;
