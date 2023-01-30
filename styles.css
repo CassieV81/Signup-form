@@ -1,17 +1,28 @@
-/* .body {
-  display: flex;
-  flex-direction: column;
-} */
+
+
+
 
 .image, .intro {
   height: 100vh;
-  width: 50vw;
+  width: 40vw;
   float: left;
   position: relative;
 }
+h3 {
+  font: 1em monospace;
+  text-align: left;
+  width: 80%;
+}
+.intro {
+  background-color: rgb(236, 240, 240);
+  padding: 20px;
+  margin: 0;
+  height: calc(100% / 3);
+  width: auto;
+}
 
 form {
-  width: calc(100% - 50vw);
+  width: calc(100% - 40vw);
   float: right;
 }
 
@@ -21,8 +32,12 @@ form {
   top: calc(100vh / 5);
   display: flex;
   justify-content: center;
-  width: 50vw;
+  width: 40vw;
 }
 .icon img {
   width: 100px;
+}
+
+form div {
+  margin-left: 40px;
 }
