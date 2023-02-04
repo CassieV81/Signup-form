@@ -11,6 +11,7 @@ A simple sign-up form created with HTML, CSS, and JavaScript.
 ## Acknowledgements
 
 The Odin Project
+
 Image credit:
 
 - tony-litvyak-X6P4ZinMYkw-unsplash.jpg from Tony Litvyak on Unsplash.
