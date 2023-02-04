@@ -8,6 +8,10 @@ A simple sign-up form created with HTML, CSS, and JavaScript.
 - CSS
 - JavaScript
 
+## Preview
+
+https://cassiev81.github.io/Signup-form/
+
 ## Acknowledgements
 
 The Odin Project
