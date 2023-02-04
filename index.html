@@ -48,12 +48,11 @@
         <input 
           type="password" 
           id="cpwd"
-          minlength="8"
           required>
       </div>
     </div>
     <div class="submit">
-      <button type="submit">Create Account</button>
+      <button class="btn" type="submit">Create Account</button>
       <p>Already have and account? Log in</p>
     </div>
   </form>
@@ -72,11 +71,14 @@
 
     const password = document.getElementById('pwd');
     const cPassword = document.getElementById('cpwd');
+    const btn = document.querySelector('.btn');
 
-    cPassword.addEventListener('input', e => {
-      if (password.value != cPassword.value) {
-        e.target.classList.add('invalid')
-        e.target.setCustomValidity("Password does not match");
+    btn.addEventListener('click', function checkPassword(){
+      if (password.value == cPassword.value) {
+        cPassword.setCustomValidity('');
+      } else {
+        cPassword.setCustomValidity("Password does not match");
+        cPassword.classList.add('invalid')
       }
     })
 
