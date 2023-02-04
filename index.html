@@ -33,7 +33,7 @@
       </div>
       <div>
         <label for="phone">PHONE NUMBER</label>
-        <input type="tel" id="phone">
+        <input type="tel" id="phone" required>
       </div>
       <div>
         <label for="pwd">PASSWORD</label>
@@ -41,14 +41,16 @@
         type="password" 
         id="pwd"
         minlength="8"
+        autocomplete="new-password";
         required>
       </div>
       <div>
-        <label for="pwd">CONFIRM PASSWORD</label>
+        <label for="cpwd">CONFIRM PASSWORD</label>
         <input 
           type="password" 
-          id="pwd"
+          id="cpwd"
           minlength="8"
+          autocomplete="new-password";
           required>
       </div>
     </div>
@@ -57,6 +59,19 @@
       <p>Already have and account? Log in</p>
     </div>
   </form>
+
+  <script>
+    const formInputs = document.getElementsByTagName('input');
+
+    for(let input of formInputs) {
+      input.addEventListener('input', e => {
+        if(e.target.value == '') {
+          e.target.setCustomValidity("This field is required!");
+          e.target.classList.add('invalid')
+        }
+      })
+    }
+  </script>
 
 </body>
 </html>
