@@ -12,7 +12,7 @@
     <img class="image" src="/tony-litvyak-X6P4ZinMYkw-unsplash.jpg" alt="tony-litvyak-image">
     <div class="icon"><img src="/odin-lined.png" alt="odin-icon"><h2>Odin</h2></div>
   </div>
-  <form action="">
+  <form action="#">
     <div class="intro">
       <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <em>now</em> to get started</h3>
       <h3>You <em>know</em> you want to.</h3>
@@ -37,17 +37,26 @@
       </div>
       <div>
         <label for="pwd">PASSWORD</label>
-        <input type="text" id="pwd" required>
+        <input 
+        type="password" 
+        id="pwd"
+        minlength="8"
+        required>
       </div>
       <div>
         <label for="pwd">CONFIRM PASSWORD</label>
-        <input type="text" id="pwd" required>
+        <input 
+          type="password" 
+          id="pwd"
+          minlength="8"
+          required>
       </div>
     </div>
     <div class="submit">
-      <button>Create Account</button>
+      <button type="submit">Create Account</button>
       <p>Already have and account? Log in</p>
     </div>
   </form>
+
 </body>
 </html>
