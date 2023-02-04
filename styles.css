@@ -92,6 +92,16 @@ form div {
   margin-left: 40px;
 }
 
+a {
+  text-decoration: none;
+  color:rgb(8, 33, 2);
+  font-weight: bold;
+}
+a:hover {
+  color: rgba(8, 33, 2, 0.6);
+  cursor: default;
+}
+
 button {
   display: inline-block;
   padding: 8px 16px;
